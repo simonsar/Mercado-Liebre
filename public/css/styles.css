@@ -1,0 +1,56 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header ul li{
+    list-style-type: none ;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+div.burguer-menu i{
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    
+}
+
+header div.input{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: darkgrey;
+    width: 250px;
+
+}
+
+main{
+    width: 90%;
+}
+
+main.section.article{
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
