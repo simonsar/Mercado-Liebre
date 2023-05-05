@@ -1,80 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+main{
+    text-align: center;
+    width: 90%;
+}
+
+article{
+    margin-bottom: 10px;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-h3{
-    font-size: 24px;
-}
-
-header nav{
-    font-size: 12px;
-}
-
-header{
-    background-color: #EAC926;
-}
-
-header ul li{
-    list-style-type: none ;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-div.burguer-menu i{
+.hamburguer-button {
     background-color: #1259c3;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 40px;
-    height: 40px;
-    width: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    display: flex;
-    flex-direction: center;
-    
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
 }
 
-header div.input{
+.logo{
+    width: 200px;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-navbar {
+    display: none;
+}
+
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+.icon{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.producto{
+    display:block;
+    border-top: 1px solid #ebebeb;
+}
+
+.footer{
+    text-align: center;
+}
+
+header div.input {
     background-color: #fff;
     border: 1px solid #000;
     color: darkgrey;
     width: 250px;
-
-}
-
-main{
-    width: 90%;
     
 }
 
-main section article div{
-    margin-bottom: 10px;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
 
 .truck-icon{
-    color: green;
-    border: 0
-
+    height: 20px;
+    width: 20px;
+    border: 1px solid #39b54a;
+    border-radius: 100%;
+    text-align: center;
+    color: #39b54a;
+    margin: auto;
+    
 }
-@media(min-width: 361px){
-    main section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+.product-image{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        
     }
-}
 
-@media(min-width: 769px){
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-}
+    .copy-header {
+        max-width: 360px;
+        text-align: right;
+    }
 
-.cafetera{
-    
-    
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
 }
