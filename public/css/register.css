@@ -12,13 +12,6 @@ article{
     margin-bottom: 10px;
 }
 
-.tarjeta-productos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-}
 .main-header{
     background-color: #EAC926;
     padding: 20px;
@@ -35,26 +28,13 @@ article{
     font-size: 24px;
 }
 
-.precios{
-    font-size: 18px;
-    padding: 0px 4px 0px 0px;
-}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-.hamburguer-button {
-    background-color: #1259c3;
-    color: white;
-    display: block;
-    max-width: 50px;
-    padding: 12px 0;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 22px;
-    margin: auto;
-}
+
 
 .logo{
     width: 50%;
@@ -92,27 +72,10 @@ body{
     margin-bottom: 10px;
 }
 
-.descuento{
-    font-size: 16px;
-    color:#39b54a;
-    display: flex;
-    align-self: center;
-    margin-left: 5px;
-}
 
-.producto{
-    position: relative;
-    border-top: 1px solid #ebebeb;
-    margin: 15px 15px 15px 15px;
-}
 
-.precios-descuento{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+
+
 
 
 .footer{
@@ -128,26 +91,7 @@ header div.input {
 }
 
 
-.truck-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
-    width: 25px;
-    border: 1px solid #39b54a;
-    border-radius: 100%;
-    text-align: center;
-    color:#39b54a ;
-    font-size: 15px;
-    position: absolute;
-    top: -13px;
-    right: 5px;
-    transition: all 450ms;
-}
 
-.product-image{
-    width: 100%;
-}
 
 article p{
     display: flex;
@@ -158,10 +102,7 @@ main article {
      margin: 10px 0px 0px 0px;
 }
 
-.img{
-    display: flex;
-    justify-content: center;
-}
+
 
 .nombre-producto{
     display: none
@@ -169,8 +110,8 @@ main article {
 
 /* TABLET*/
 @media (min-width: 768px){
-    main section div article{
-         box-shadow : 0px 0px 10px rgb(100,100,100 );
+    main article{
+         box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 ); /*esto no funciona*/
          width: 40%;
     }
 
@@ -268,14 +209,6 @@ main article {
         justify-content: space-between;
         
     }
-
-    .tarjeta-productos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100%;
-        justify-content: space-around;
-    }
     
 
     .copy-header {
@@ -298,10 +231,8 @@ main article {
     }
 
     main article{
-        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
         width: 20%;
-        margin-left: 10px;
-        margin-right: 10px;
     }
 }
 
