@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=PT+Serif&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <link href="css\register.css" rel="stylesheet">
+        <link href="css\login.css" rel="stylesheet">
         <link rel="stylesheet" href="/public/css/normalize.css">
         <script src="https://kit.fontawesome.com/2a2d9fceba.js" crossorigin="anonymous"></script>
         <title>Mercado Liebre: Registro</title>
@@ -55,107 +55,26 @@
 
     <main>
         
-        <section class="fondo-main">
-            <form action="/" method="POST" class="datos-basicos">
-
-            
+        <section>
+            <h2>Inicio de sesión</h2>
+            <form action="/" method="get">
                 <div>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="input-style">
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required class="input-style">
                 </div>
-                <div>
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="input-style">
-                </div>
-                <div>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required class="input-style"> 
-                </div>
-           
-
-
-            
-                <div>
-                    <h2>Fecha de nacimiento</h2>
-                    <input type="date" name="fecha" id="fecha" required class="input-style">
-                </div>
-                <div>
-                    <h2>Domicilio</h2>
-                    <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required class="input-style">
-                </div>
-            
-
-            
-                <h2>Perfil del usuario</h2>
-                <div class="perfil-usuario">
-                    <span class="espacio-input-label">
-                        <label for="comprador">Comprador</label>
-                        <input type="radio" name="comprador-vendedor" id="comprador" required>
-                    </span>
-                    <span class="espacio-input-label">
-                        <label for="vendedor">Vendedor</label>
-                        <input type="radio" name="comprador-vendedor" id="vendedor" required>
-                    </span>
-                </div>
-            
-
-           
-                <h2>Intereses</h2>
-                <div class="intereses">
-                    <span class="espacio-radio">
-                        <label for="electro">Electro</label>
-                        <input type="checkbox" name="intereses" id="electro">
-                    </span>
-                    
-                    <span class="espacio-radio">
-                        <label for="moda">Moda</label>
-                        <input type="checkbox" name="intereses" id="moda">
-                    </span>
-
-                    <span class="espacio-radio">
-                        <label for="hogar">Hogar</label>
-                        <input type="checkbox" name="intereses" id="hogar">
-                    </span>
-                    
-                    <span class="espacio-radio">
-                        <label for="jugueteria"> Jugueteria</label>
-                        <input type="checkbox" name="intereses" id="jugueteria">
-                    </span>
-                    
-                    <span class="espacio-radio">
-                        <label for="vida-sana">Vida sana</label>
-                        <input type="checkbox" name="intereses" id="vida-sana">
-                    </span>
-                </div>
-           
-
-            
-                <article class="article-foto-perfil">
-                    <h2>Foto de perfil</h2>
-                    <div class="div-foto-perfil">
-                        <img src="/img/register-mercado-liebre.jpg" alt="foto-perfil" class="foto-perfil">
-                    </div>
-                </article>
                 <h2>Contraseña</h2>
-            
                 <div>
-                    <input type="password" name="password" id="password" placeholder="Ingrese una contraseña" required class="input-style">
+                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required class="input-style">
                 </div>
-                <div>
-                    <input type="password" name="password" id="password-repetida" placeholder="Confirme la contraseña" required class="input-style">
-                </div>
-            
-
-            
-                <div>
+                <div class="caja-botones">
                     <button type="submit" class="boton">Enviar</button>
                     <button type="reset" class="boton">Borrar</button>
                 </div>
-            
-            
-
             </form>
-        </section>  
+        </section>
 
 
     </main>
+
 
     <footer class="footer">
         <div> 

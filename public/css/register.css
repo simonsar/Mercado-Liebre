@@ -32,6 +32,7 @@ article{
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    margin: 0;
 }
 
 
@@ -40,6 +41,17 @@ body{
     width: 50%;
     margin-right: 10px;
 
+}
+.hamburguer-button {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
 }
 
 .search-bar-total{
@@ -54,7 +66,7 @@ body{
 }
 
 .copy-header{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     margin-bottom: 30px;
     text-align: center;
@@ -71,12 +83,6 @@ body{
     font-size: 2em;
     margin-bottom: 10px;
 }
-
-
-
-
-
-
 
 .footer{
     text-align: center;
@@ -108,12 +114,59 @@ main article {
     display: none
 }
 
+
+.fondo-main{
+    background-color: #ebebeb;
+}
+.input-style{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.espacio-input-label{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.intereses{
+    display: grid;
+    text-align: left;
+    margin: 0px 0px 10px 20px
+}
+
+.foto-perfil{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.article-foto-perfil{
+    background-color: #ebebeb;
+}
+
+h2{
+    margin: 10px 0px 10px 0px;
+}
+
+.boton{
+    margin: 20px 5px 0px 5px ;
+    color: white;
+    background-color: #1259c3;
+    border: 1px solid #1259c3;
+    border-radius: 5px;
+    height: 30px;
+    width:60px;
+    transition: background-color 450ms;   
+}
+
+.boton:hover{
+    background-color: #0022AA;
+}
 /* TABLET*/
 @media (min-width: 768px){
-    main article{
-         box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 ); /*esto no funciona*/
-         width: 40%;
-    }
 
     main{
         text-align: center;
@@ -188,7 +241,29 @@ main article {
     display: flex;
     }
 
+    .intereses{
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .article-foto-perfil{
+        text-align: center;
+        margin-top: 25px;
+    }
     
+    .div-foto-perfil{
+        margin-bottom: 25px;
+    }
+
+    .boton{
+        width: 200px;
+        height: 40px;
+    }
+
+    .input-style{
+        width: 500px;
+    }
 }
 
 /* DESKTOP*/
@@ -230,9 +305,42 @@ main article {
         display: flex;
     }
 
-    main article{
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
-        width: 20%;
+     .article-foto-perfil{
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    .div-foto-perfil{
+        margin-bottom: 25px;
+    }
+
+    .boton{
+        width: 250px;
+        height: 40px;
+    }
+
+    .input-style{
+        width: 600px;
+    }
+
+    .footer{
+        display: flex;
+        position: relative;
+        transition: color 450ms;
+        margin: 0px 10px 0px 10px
+    }
+
+    footer div i{
+        transition: color 200ms ease-in-out;
+    }
+
+    footer div i:hover{
+        color: #0022AA;
+    }
+
+    .copyright{
+        position: absolute;
+        top: 150px;
     }
 }
 

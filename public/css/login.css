@@ -6,16 +6,13 @@ main{
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 20px
 }
 
-
-.tarjeta-productos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+article{
+    margin-bottom: 10px;
 }
+
 .main-header{
     background-color: #EAC926;
     padding: 20px;
@@ -32,16 +29,20 @@ main{
     font-size: 24px;
 }
 
-.precios{
-    font-size: 18px;
-    padding: 0px 4px 0px 0px;
-}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     margin: 0;
 }
 
+
+
+.logo{
+    width: 50%;
+    margin-right: 10px;
+
+}
 .hamburguer-button {
     background-color: #1259c3;
     color: white;
@@ -54,23 +55,16 @@ body{
     margin: auto;
 }
 
-.logo{
-    width: 50%;
-    margin-right: 10px;
-
-}
-
 .search-bar-total{
     width: 50%;
 }
 
 .search-input{
-    width: 100%;
+    width: 80%;
     height: 30px;
     border: 1px solid white;
     border-radius: 5%;
 }
-
 
 .copy-header{
     font-size: 15px;
@@ -91,44 +85,6 @@ body{
     margin-bottom: 10px;
 }
 
-.search-bar{
-    position: relative;
-}
-
-.search-bar i{
-    position: absolute;
-    right: 5px;
-    top: 7px;
-}
-
-.search-bar .search-input{
-    padding-right: 30px;
-    padding-left: 5px;
-}
-
-.descuento{
-    font-size: 16px;
-    color:#39b54a;
-    display: flex;
-    align-self: center;
-    margin-left: 5px;
-}
-
-.producto{
-    position: relative;
-    border-top: 1px solid #ebebeb;
-    margin: 15px 15px 15px 15px;
-}
-
-.precios-descuento{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-
 .footer{
     text-align: center;
 }
@@ -142,27 +98,7 @@ header div.input {
 }
 
 
-.truck-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
-    width: 25px;
-    border: 1px solid #39b54a;
-    border-radius: 100%;
-    text-align: center;
-    color:#39b54a ;
-    font-size: 15px;
-    position: absolute;
-    top: -13px;
-    right: 5px;
-    transition: all 200ms ease-in-out;
-}
 
-
-.product-image{
-    width: 100%;
-}
 
 article p{
     display: flex;
@@ -170,27 +106,68 @@ article p{
 
 main article {
     background-color: white;
-    margin: 10px 15px 0px 15px;
-    transition: all 200ms ease-in-out;
+     margin: 10px 0px 0px 0px;
 }
 
-.img{
-    display: flex;
-    justify-content: center;
-}
+
 
 .nombre-producto{
-    display: none;
-    
+    display: none
 }
 
 
+.fondo-main{
+    background-color: #ebebeb;
+}
+.input-style{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.espacio-input-label{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.intereses{
+    display: grid;
+    text-align: left;
+    margin: 0px 0px 10px 20px
+}
+
+.foto-perfil{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.article-foto-perfil{
+    background-color: #ebebeb;
+}
+
+h2{
+    margin: 10px 0px 10px 0px;
+}
+
+.boton{
+    margin: 20px 5px 0px 5px ;
+    color: white;
+    background-color: #1259c3;
+    border: 1px solid #1259c3;
+    border-radius: 5px;
+    height: 30px;
+    width:60px;
+    transition: background-color 450ms;
+}
+
+.boton:hover{
+    background-color: #0022AA;
+}
 /* TABLET*/
 @media (min-width: 768px){
-    main section div article{
-         box-shadow : 0px 0px 10px rgb(100,100,100 );
-         width: 40%;
-    }
 
     main{
         text-align: center;
@@ -233,26 +210,6 @@ main article {
         font-size: 12px;
     }
 
-    h2.copy-header {
-        display: block;
-        margin-left: auto;
-    }
-
-    .main-header-top-bar {
-        width: 100%;
-    }
-
-    .search-bar-total{
-        width: 50%;
-        margin-left: auto;
-        
-    }
-
-    .logo{
-        width: 33%;
-    }
-
-
     .rigth-navbar{
         display: flex;
         justify-content: row;
@@ -263,21 +220,9 @@ main article {
         display: flex;
     }
 
-    h2.copy-header {
-        display: block;
-        margin-left: auto;
-        text-align: right;
-        min-width: 33%;
-    }
-
     .search-input{
-        height: 35px;
+        height: 22px;
         margin-top: 15px;
-    }
-
-    .search-bar i {
-        right: 5px;
-        top: 20px;
     }
     header section div i{
         height: 20px;
@@ -297,8 +242,31 @@ main article {
     display: flex;
     }
 
+    .intereses{
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .article-foto-perfil{
+        text-align: center;
+        margin-top: 25px;
+    }
     
+    .div-foto-perfil{
+        margin-bottom: 25px;
+    }
+
+    .boton{
+        width: 200px;
+        height: 40px;
+    }
+
+    .input-style{
+        width: 500px;
+    }
 }
+
 
 /* DESKTOP*/
 @media (min-width: 1280px){
@@ -308,35 +276,15 @@ main article {
         justify-content: space-between;
     }
 
-    .search-input{
-        height: 35px;
-    }
-
-    header section div i{
-        position: relative;
-        bottom: 1px;
-        right: 35px;
-        height: 25px;
-        width: 25px;
-        padding: 5px;
-    }
     main{
         text-align: center;
         width: 100%;
-        margin-bottom: 30px;
+        margin: 80px 0px 30px 0px;
     }
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
         
-    }
-
-    .tarjeta-productos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100%;
-        justify-content: space-around;
     }
     
 
@@ -359,46 +307,29 @@ main article {
         display: flex;
     }
 
-    main section div article{
-        box-shadow : none;
-        overflow: hidden;
-        width: 20%;
-        margin-left: 10px;
-        margin-right: 10px;
-        transition: all 200ms ease-in-out;
-    }
-
-    .nombre-producto{
-        opacity: 0;
-        transition: all 200ms ease-in-out;
-    }
-
-    main article:hover{
-        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 ); 
-        cursor: pointer;
+    .article-foto-perfil{
+        text-align: center;
+        margin-top: 25px;
     }
     
-    main article:hover .nombre-producto{
-        opacity: 1;
+    .div-foto-perfil{
+        margin-bottom: 25px;
     }
 
-    main article:hover .truck-icon{
-        transform: rotate(-90deg);
+    .boton{
+        width: 250px;
+        height: 40px;
     }
 
-     main article .product-image{
-        transition: all 200ms ease-in-out;
-        
+    .input-style{
+        width: 600px;
     }
-
-    main article:hover .product-image{
-        transform: scale(1.05);
-
-    }
-
+    
     .footer{
         display: flex;
-        position: relative;
+        margin: 0px 10px 0px 10px;
+        position: absolute;
+        bottom: 0;
     }
 
     footer div i{
@@ -408,9 +339,9 @@ main article {
     footer div i:hover{
         color: #0022AA;
     }
-    .copyright{
+    
+   .copyright{
         position: absolute;
         top: 150px;
     }
 }
-
