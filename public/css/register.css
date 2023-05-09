@@ -58,11 +58,16 @@ body{
     width: 50%;
 }
 
-.search-input{
-    width: 80%;
+.search-input {
+    width: 100%;
     height: 30px;
     border: 1px solid white;
     border-radius: 5%;
+}
+
+.search-bar .search-input{
+    padding-right: 30px;
+    padding-left: 5px;
 }
 
 .copy-header{
@@ -96,8 +101,15 @@ header div.input {
     
 }
 
+.search-bar i {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
 
-
+.search-bar{
+    position: relative;
+}
 
 article p{
     display: flex;
@@ -134,7 +146,7 @@ main article {
 
 .intereses{
     display: grid;
-    text-align: left;
+    text-align: center;
     margin: 0px 0px 10px 20px
 }
 
@@ -183,7 +195,10 @@ h2{
         flex-direction:row ;
         justify-content: space-between;
     }
-   
+    
+    .main-header-top-bar {
+        width: 100%;
+    }
     .main-navbar{
         display: flex;
         
@@ -203,6 +218,7 @@ h2{
         margin: 10px 0px -5px 15px
     }
 
+
     .left-navbar{
         display: flex;
         justify-content: row;
@@ -219,8 +235,15 @@ h2{
         display: flex;
     }
 
-    .search-input{
-        height: 22px;
+    h2 .copy-header{
+        display: block;
+        margin-left: auto;
+        text-align: auto;
+        min-width: 33%;
+    }
+
+   .search-input{
+        height: 35px;
         margin-top: 15px;
     }
     header section div i{
@@ -229,7 +252,29 @@ h2{
         padding: 2px;
         background-color: white;
     }
-    
+
+    .search-bar-total{
+        width: 50%;
+        margin-left: auto;
+        
+    }
+
+    .main-header-top-bar{
+        width: 100%;
+    }
+
+    .search-bar i {
+        right: 5px;
+        top: 20px;
+    }
+
+    h2.copy-header{
+        display: block;
+        margin-left: auto;
+        text-align: right;
+        min-width: 33%;
+    }
+
     .tarjeta-productos{
         display: flex;
         flex-direction: row;
@@ -238,7 +283,7 @@ h2{
     }
 
     .nombre-producto{
-    display: flex;
+        display: flex;
     }
 
     .intereses{

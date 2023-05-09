@@ -233,10 +233,7 @@ main article {
         font-size: 12px;
     }
 
-    h2.copy-header {
-        display: block;
-        margin-left: auto;
-    }
+  
 
     .main-header-top-bar {
         width: 100%;
@@ -247,11 +244,6 @@ main article {
         margin-left: auto;
         
     }
-
-    .logo{
-        width: 33%;
-    }
-
 
     .rigth-navbar{
         display: flex;
